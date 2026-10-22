@@ -1,0 +1,8 @@
+# Local run of the API (the Dockerfile pins scikit-learn/pandas/numpy from models/metadata.json).
+# Locally, install the same versions as at training time: see models/metadata.json.
+fastapi
+uvicorn[standard]
+pandas
+numpy
+scikit-learn
+httpx    # only needed to run tests/test_serving.py
